@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:first_app/page2.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -139,7 +140,9 @@ class _HomePageState extends State<HomePage> {
               style: ElevatedButton.styleFrom(
                 backgroundColor: Color.fromARGB(230, 61, 165, 249)
               ),
-              onPressed: (){}, child: Text("Navigate to another page"))
+              onPressed: (){
+              Navigator.of(context).push(MaterialPageRoute(builder: (builder) => const SecondPage()));
+              }, child: const Text("Navigate to another page"))
           ],
         ));
   }
