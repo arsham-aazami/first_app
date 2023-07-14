@@ -135,6 +135,11 @@ class _HomePageState extends State<HomePage> {
             const SizedBox(height: 30, width: double.infinity),
             const LeftBar(barWidth: 50),
             const SizedBox(height: 30, width: double.infinity),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Color.fromARGB(230, 61, 165, 249)
+              ),
+              onPressed: (){}, child: Text("Navigate to another page"))
           ],
         ));
   }
