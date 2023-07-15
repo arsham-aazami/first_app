@@ -24,6 +24,8 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
 
+  TextEditingController fnametController = TextEditingController();
+  TextEditingController lnameController = TextEditingController();
   TextEditingController heightController = TextEditingController();
   TextEditingController weightController = TextEditingController();
 
@@ -48,6 +50,45 @@ class _HomePageState extends State<HomePage> {
               height: 50,
               width: double.infinity,
             ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                 Container(
+                  width: 70,
+                  height: 60,
+                  child: TextField(
+                    controller: fnametController,
+                    style: const TextStyle(
+                        color: Color.fromARGB(255, 17, 212, 206)),
+                    decoration: const InputDecoration(
+                      border: InputBorder.none,
+                      hintText: "Name",
+                      hintStyle: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20.0,
+                          color: Color.fromARGB(255, 181, 180, 178)),
+                    ),
+                  ),
+                ),
+                 Container(
+                  width: 70,
+                  height: 60,
+                  child: TextField(
+                    controller: lnameController,
+                    style: const TextStyle(
+                        color: Color.fromARGB(255, 17, 212, 206)),
+                    decoration: const InputDecoration(
+                      border: InputBorder.none,
+                      hintText: "Family",
+                      hintStyle: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20.0,
+                          color: Color.fromARGB(255, 181, 180, 178)),
+                    ),
+                  ),
+                ),
+              ],
+              ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
