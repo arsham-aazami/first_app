@@ -8,7 +8,7 @@ class SecondPage extends StatelessWidget {
     return  Scaffold(
       backgroundColor: const Color.fromARGB(255, 8, 8, 8),
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 71, 224, 147),
+        backgroundColor:const Color.fromARGB(255, 40, 39, 39),
         title: Text("Second Page"),
         )
     );
