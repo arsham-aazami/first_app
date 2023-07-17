@@ -1,3 +1,5 @@
+// ignore_for_file: sized_box_for_whitespace
+
 import 'dart:math';
 
 import 'package:first_app/page2.dart';

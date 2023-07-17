@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
 class SecondPage extends StatelessWidget {
-  const SecondPage({super.key});
+  SecondPage({super.key});
+
+  String? first_name;
+  String? last_name;
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +17,7 @@ class SecondPage extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               width: double.infinity,
               height: 300,
             ),
