@@ -184,7 +184,7 @@ class _HomePageState extends State<HomePage> {
                 backgroundColor: Color.fromARGB(230, 61, 165, 249)
               ),
               onPressed: (){
-              Navigator.of(context).push(MaterialPageRoute(builder: (builder) => const SecondPage()));
+              Navigator.of(context).push(MaterialPageRoute(builder: (builder) => SecondPage(fnametController.text, lnameController.text)));
               }, child: const Text("Navigate to another page"))
           ],
         ));
